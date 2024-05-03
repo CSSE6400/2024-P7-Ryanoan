@@ -28,8 +28,25 @@ GET https://taskoverflow-1445159644.us-east-1.elb.amazonaws.com/api/v1/health
 POST {{baseUrl}}/api/v1/9
 Accept: application/json
 
-###HAHA
-POST {{baseUrl}}/api/v1/todos/ical
 
-###HAHA
-POST {{baseUrl}}/api/v1/customer
+### POST 1
+POST http://localhost:6400/api/v1/todos/ical
+
+### GET 1
+GET http://localhost:6400/api/v1/todos/ical/8f5cf7e2-9c81-4647-9a24-41fc273cf0fc/status
+
+### GET 2
+GET http://localhost:6400/api/v1/todos/ical/8f5cf7e2-9c81-4647-9a24-41fc273cf0fc/result
+
+### GET 3
+GET http://localhost:6400/api/v1/todos/ical/d7c2e9d9-3b4d-4ccd-ad7d-29f42b0812f6/status
+
+### GET 3
+GET http://localhost:6400/api/v1/todos/ical/a4305de0-928a-46b2-b1fa-68d90d1e1fa3/result
+
+
+
+
+curl -X GET http://localhost:6400/api/v1/todos/ical/dd005b85-aecd-4b56-aa41-8f2d1c593e06/status
+
+
