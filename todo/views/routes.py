@@ -112,6 +112,7 @@ def create_ical():
     return jsonify(result), 202
 
 
+
 @api.route('/todos/ical/<task_id>/status', methods=['GET'])
 def get_task(task_id):
     task_result = AsyncResult(task_id)
